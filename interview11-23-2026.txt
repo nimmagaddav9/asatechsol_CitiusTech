@@ -1,1 +1,22 @@
 IQ
+INTERVIEW SUMMARY
+
+The interview covered the candidate’s background, Redux, API orchestration with Redux Saga, and two JavaScript coding exercises.
+
+1. Tell me about yourself.
+The candidate described 13 years of UI and full-stack experience, mainly with React, TypeScript, JavaScript, HTML, and CSS. At First Citizens Bank, they worked on back-office and customer-facing workflows, including user enrollment, access management, reporting, and a cryptocurrency feature. Previously, they helped migrate United Airlines applications from .NET to React and built features such as miles pooling. They also mentioned work at Visa and other companies.
+
+2. What is the difference between Redux and Redux Thunk?
+The candidate explained that Redux manages application state, while Redux Thunk is middleware that supports asynchronous logic in action creators, such as making API calls and dispatching results. They also compared Thunk with Redux Saga, describing Saga as suited to more involved asynchronous workflows.
+
+3. How do you handle multiple API calls using Redux Saga?
+They said they use `all` for independent calls that can run in parallel and `call` for sequential calls with dependencies. They also mentioned handling errors and cancellations, then dispatching success or failure actions.
+
+4. Write JavaScript to find duplicates based on ID.
+The candidate proposed counting IDs in a `Map`, then filtering for IDs with counts greater than one. The interviewer clarified the goal as removing duplicate objects, but the candidate’s described solution returned duplicate IDs rather than a deduplicated object list.
+
+5. Write a debounce function.
+The candidate described clearing the previous timer on each call, starting a new timeout, and invoking the function after the wait period with the saved arguments and `this` context.
+
+OVERALL
+The candidate gave a detailed career introduction and explained the asynchronous Redux concepts clearly. The transcript records answers for both coding exercises, but the duplicate-object exercise appears to have a mismatch between the interviewer’s clarification and the stated output.
